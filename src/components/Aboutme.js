@@ -3,19 +3,13 @@ export default function Aboutme() {
     <section id="aboutme" className="py-20 bg-white text-center max-w-3xl mx-auto rounded-lg shadow-md px-6">
       <h2 className="text-3xl font-bold mb-6">About Me</h2>
       <p className="text-gray-700 mb-4">
-        Halo! Aku Muhammad Adi Al Saadan, siswa [translate:SMKN 1 Probolinggo] kelas XI dengan jurusan [translate:Rekayasa Perangkat Lunak (RPL)].
+        Hai! Aku Muhammad Adi Al Saadan, siswa SMKN 1 Probolinggo jurusan RPL dan menjadi bagian dari Axioo Class Program. Sekarang fokus memperdalam skill pengembangan perangkat lunak lewat IDCamp Dicoding di bidang Data Science.
       </p>
       <p className="text-gray-700 mb-4">
-        Aku telah menyelesaikan [translate:Axioo Class Program level 1, 2, dan 3], serta saat ini tengah mengikuti [translate:IDCamp Dicoding] yang diselenggarakan oleh [translate:Indosat] untuk memperkuat keterampilan di bidang pengembangan perangkat lunak.
-      </p>
-      <p className="text-gray-700 mb-4">
-        Sebagai seorang pembelajar seumur hidup, aku selalu berusaha untuk memperluas wawasan dan mengasah kemampuan di dunia teknologi. Aku memiliki ketertarikan mendalam pada pengelolaan database, pengembangan web, dan arsitektur sistem.
-      </p>
-      <p className="text-gray-700 mb-4">
-        Dalam praktiknya, aku cukup menguasai PHP dan HTML, dua bahasa yang menjadi fondasi utama dalam pengembangan web. Melalui berbagai proyek kecil dan latihan mandiri, aku terbiasa membangun struktur halaman yang rapi, fungsional, serta menerapkan logika backend yang efisien menggunakan PHP.
+        Passion-ku di database, web, dan sistem. Cukup mahir PHP dan HTML, biasa bikin project web yang rapi dan fungsional.
       </p>
       <p className="text-gray-700">
-        Bagiku, setiap baris kode bukan sekadar perintah komputer — tetapi langkah kecil untuk mewujudkan ide menjadi kenyataan.
+        Buatku, setiap baris kode itu langkah nyata buat wujudin ide.
       </p>
     </section>
   );
