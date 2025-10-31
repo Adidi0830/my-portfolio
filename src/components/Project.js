@@ -1,8 +1,8 @@
 export default function Projects() {
   const data = [
-    { name: "GUMEL APP", desc: "Aplikasi manajemen nilai guru", link: "#" },
-    { name: "AI Generate Text", desc: "Aplikasi AI berbasis PHP MVC", link: "#" },
-    { name: "Kurikulum App", desc: "Sistem manajemen kurikulum sekolah", link: "#" },
+    { name: "LANDING PAGE WITH HTML", desc: "Aplikasi manajemen nilai guru", link: "#" },
+    { name: "PHP FORM", desc: "Aplikasi AI berbasis PHP MVC", link: "#" },
+    { name: "COMING SOON", desc: "Sistem manajemen kurikulum sekolah", link: "#" },
   ];
 
   return (
