@@ -1,7 +1,7 @@
 export default function Projects() {
   const data = [
-    { name: "LANDING PAGE WITH HTML", desc: "Aplikasi manajemen nilai guru", link: "#" },
-    { name: "PHP FORM", desc: "Aplikasi AI berbasis PHP MVC", link: "#" },
+    { name: "LANDING PAGE WITH HTML", desc: "Membuat landing page untuk tampilan web sekolah menggunakan html", link: "#" },
+    { name: "PHP FORM", desc: "Aplikasi form dengan tampilan sederhana menggunakan php dan css sederhana", link: "#" },
     { name: "COMING SOON", desc: "Sistem manajemen kurikulum sekolah", link: "#" },
   ];
 
