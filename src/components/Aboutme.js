@@ -6,7 +6,7 @@ export default function Aboutme() {
         Hai! Aku Muhammad Adi Al Saadan, siswa SMKN 1 Probolinggo jurusan RPL dan alumni Axioo Class Program. Sekarang fokus memperdalam skill pengembangan perangkat lunak lewat IDCamp Dicoding.
       </p>
       <p className="text-gray-700 mb-4 text-justify">
-        Passion-ku di database, web, dan sistem. Cukup mahir PHP dan HTML, biasa bikin project web yang rapi dan fungsional.
+        Passion-ku di database, web, dan sistem. Cukup mahir PHP dan HTML, terutama membuat project web yang rapi dan fungsional.
       </p>
       <p className="text-gray-700 text-justify">
         Buatku, setiap baris kode itu langkah nyata buat wujudin ide.
