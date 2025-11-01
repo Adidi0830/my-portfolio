@@ -1,77 +1,67 @@
-class Certificate {
-    constructor() {
-        this.certificates = [
-            {
-                title: "Web Development Fundamentals",
-                platform: "Coursera",
-                date: "Jan 2025",
-                icon: "🏆",
-                gradient: "from-yellow-400 to-orange-500",
-                buttonColor: "bg-yellow-500 hover:bg-yellow-600",
-                link: "#"
-            },
-            {
-                title: "JavaScript Programming",
-                platform: "Dicoding Indonesia",
-                date: "Dec 2024",
-                icon: "📜",
-                gradient: "from-blue-400 to-indigo-500",
-                buttonColor: "bg-blue-500 hover:bg-blue-600",
-                link: "#"
-            },
-            {
-                title: "Responsive Web Design",
-                platform: "FreeCodeCamp",
-                date: "Nov 2024",
-                icon: "🎓",
-                gradient: "from-pink-400 to-red-500",
-                buttonColor: "bg-pink-500 hover:bg-pink-600",
-                link: "#"
-            }
-        ];
+export default function Certificate() {
+  const certificates = [
+    {
+      name: "HARDWARE FUNDAMENTALS",
+      platform: "UpMySkill ACP",
+      date: "02 Mei 2025",
+      preview: "/ACP1.png", // Ganti dengan path gambar sertifikat lo
+      link: "#"
+    },
+    {
+      name: "DATA SCIENCE FUNDAMENTALS",
+      platform: "Dicoding Indonesia",
+      date: "01 Oktober 2025",
+      preview: "/DCDDDS.png", // Ganti dengan path gambar sertifikat lo
+      link: "#"
+    },
+    {
+      name: "SQL FUNDAMENTALS",
+      platform: "Dicoding Indonesia",
+      date: "09 Oktober 2025",
+      preview: "/DSQL.png", // Ganti dengan path gambar sertifikat lo
+      link: "#"
     }
+  ];
 
-    createCertificateCard(cert) {
-        const card = document.createElement('div');
-        card.className = 'bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300';
-
-        card.innerHTML = `
-            <div class="h-40 bg-gradient-to-br ${cert.gradient} flex items-center justify-center">
-                <span class="text-white text-5xl">${cert.icon}</span>
+  return (
+    <section id="certificates" className="py-20 bg-white">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-10">🏆 Sertifikat Saya</h2>
+        <div className="grid md:grid-cols-3 gap-6 px-4">
+          {certificates.map((c, i) => (
+            <div 
+              key={i} 
+              className="border rounded-2xl shadow overflow-hidden hover:shadow-lg transition hover:-translate-y-1"
+            >
+              {/* Preview Gambar Sertifikat */}
+              <div className="h-48 bg-gray-200 overflow-hidden">
+                <img 
+                  src={c.preview} 
+                  alt={c.name}
+                  className="w-full h-full object-cover hover:scale-105 transition duration-300"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = '<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-yellow-100 to-orange-100"><span class="text-6xl">📜</span></div>';
+                  }}
+                />
+              </div>
+              
+              {/* Info Sertifikat */}
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">{c.name}</h3>
+                <p className="text-gray-600 mb-1">{c.platform}</p>
+                <p className="text-gray-500 text-sm mb-4">Issued: {c.date}</p>
+                <a 
+                  href={c.link} 
+                  className="text-yellow-500 hover:text-black font-semibold"
+                >
+                  Lihat Sertifikat →
+                </a>
+              </div>
             </div>
-            <div class="p-6">
-                <h3 class="text-lg font-bold text-gray-900 mb-2">${cert.title}</h3>
-                <p class="text-gray-600 text-sm mb-1">${cert.platform}</p>
-                <p class="text-gray-500 text-sm mb-4">Issued: ${cert.date}</p>
-                <a href="${cert.link}" class="block w-full ${cert.buttonColor} text-white text-center py-2 rounded-lg transition">View Certificate</a>
-            </div>
-        `;
-
-        return card;
-    }
-
-    render(containerId) {
-        const container = document.getElementById(containerId);
-        if (!container) {
-            console.error(`Container dengan id "${containerId}" tidak ditemukan!`);
-            return;
-        }
-
-        container.innerHTML = '';
-        
-        this.certificates.forEach(cert => {
-            const card = this.createCertificateCard(cert);
-            container.appendChild(card);
-        });
-    }
-
-    getCertificates() {
-        return this.certificates;
-    }
-
-    addCertificate(certData) {
-        this.certificates.push(certData);
-    }
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
-
-export default Certificate;
