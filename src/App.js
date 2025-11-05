@@ -2,7 +2,7 @@ import './index.css'
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Aboutme from "./components/Aboutme";
-import Projects from "./components/Project";
+import Experience from "./components/Experience";
 import Certificate from "./components/Certificate";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <Aboutme/>
-      <Projects />
+      <Experience />
       <Certificate/>
       <Contact />
       <Footer />
