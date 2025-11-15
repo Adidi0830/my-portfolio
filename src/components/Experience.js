@@ -9,8 +9,8 @@ export default function Experience() {
       role: "Vice Chairman",
       organization: "PIK-R Srikandi",
       achievements: [
-        "Memimpin program kesehatan reproduksi remaja untuk 500+ siswa",
-        "Mengelola tim 15+ anggota dalam pelaksanaan kegiatan peer education",
+        "Memimpin program kesehatan reproduksi remaja untuk 250+ siswa",
+        "Mengelola tim 15+ anggota dalam pelaksanaan kegiatan peer to peer education",
         "Mengkoordinasikan kolaborasi dengan Puskesmas dan Dinas Kesehatan"
       ],
       skills: ["Leadership", "Program Management", "Stakeholder Coordination"]
@@ -29,9 +29,9 @@ export default function Experience() {
     {
       year: "2023 - 2024",
       role: "Head of Public Relations Division",
-      organization: "OSIS Sparta",
+      organization: "OSIS Sparta - Public Relation Division",
       achievements: [
-        "Memimpin divisi HUMAS dengan 8 anggota dalam strategi komunikasi sekolah",
+        "Memimpin divisi HUMAS dengan 4 anggota dalam strategi komunikasi sekolah",
         "Mengelola media sosial sekolah dengan engagement rate naik 60%",
         "Mengkoordinasikan publikasi 15+ event sekolah dan eksternal relations"
       ],
@@ -42,7 +42,7 @@ export default function Experience() {
       role: "Religious Activities Team Member",
       organization: "OSIS Sparta - Religious Affairs Division",
       achievements: [
-        "Mendukung pelaksanaan kegiatan keagamaan rutin untuk 300+ siswa",
+        "Mendukung pelaksanaan kegiatan keagamaan rutin untuk 150+ siswa",
         "Membantu pengelolaan jadwal dan logistik kegiatan Ramadan, PHBI, dan kajian rutin",
         "Berkolaborasi dengan tim dalam koordinasi program tahunan keagamaan"
       ],
